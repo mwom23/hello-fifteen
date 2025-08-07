@@ -1,20 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h4>App component text</h4>
+<ChildStyles>
+  <h4>ChildStyles component text</h4>
+</ChildStyles>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChildStyles from './components/ChildStyles.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ChildStyles,
+  },
+  data () {
+    return {
+
+    }
+  },
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +29,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h4{
+  color: orange;
 }
 </style>
